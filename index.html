@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="La Maison">
+  <meta name="description" content="Household task planning and tracking.">
+  <title>La Maison</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-tab="home" aria-label="La Maison home"><span class="brand-mark">LM</span><span><strong>La Maison</strong><small>Household tasks</small></span></button>
+      <div class="today-date">Household tasks</div>
+    </header>
+    <section class="content" id="app"></section>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <button class="active" data-tab="home"><span class="nav-icon">⌂</span>Home</button>
+      <button data-tab="tasks"><span class="nav-icon">✓</span>Tasks</button>
+      <button data-tab="calendar"><span class="nav-icon">▦</span>Calendar</button>
+      <button data-tab="library"><span class="nav-icon">☷</span>Library</button>
+    </nav>
+    <div id="modal-root"></div><div id="toast-root"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
